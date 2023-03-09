@@ -1,5 +1,6 @@
 package com.yingzi.chapter06;
 
+import com.yingzi.chapter05.Source.ClickSource;
 import com.yingzi.chapter05.Source.Event;
 import org.apache.flink.api.common.eventtime.SerializableTimestampAssigner;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
