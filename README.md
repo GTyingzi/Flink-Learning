@@ -60,8 +60,55 @@ Sink
 # chapter07
 
 ```
+EventTimeTimerTest：基于自定义数据源基于事件时间的定时器触发例子
 ProcessFunctionTest：处理函数的一个简单例子
 ProcessingTimeTimerTest：定时器
 TopNExample：TopN案例
 TopNExample_ProcessAllWindowFunctions：全窗口实现TopN
 ```
+
+# chapter08
+```
+IntervalJoinExample：intervalJoin的例子
+UnionTest：流union的例子
+ConnectTest：流connect的例子
+CoGroupTest：流coGroup的例子
+WindowJonTest：窗口join的例子
+SplitStreamTest：利用侧输出流分流
+BillCheckExample：实时检测两个不同来源的支付信息是否匹配
+```
+
+# chapter09
+```
+AverageTimestampExample：状态管理和聚合功能来实时计算和输出结果“计算每个用户的平均点击时间戳”
+BroadcastStateExample：BroadcastState的例子
+BufferingSinkExample：批量输出到Sink到例子
+FakeWindowExample：利用KeyedProcessFunction实现滑动窗口统计，统计每个URL在连续10秒窗口内的PV
+PeriodicPvExample：利用KeyedProcessFunction实现滑动窗口统计，统计每个用户在连续10秒窗口内的PV
+TwoStreamFullJoinExample：两个数据流全连接的例子，具有相同的键
+```
+
+# chapter11
+```
+TableExample：Table API的简单例子
+AppendQueryExample：利用Table API和SQL来执行基于滚动窗口的统计查询
+CommonApiTest：基于老版本、blink版本的流批处理
+TableToStreamExample：Table转Stream的例子
+CumulateWindowExample：累加窗口的Table例子
+TopNExample：TopN的Table例子
+WindowTopNExample：窗口TopN的Table例子
+UdfTest_TableFunction：注册自定义表函数
+UdfTest_AggregateFunction：注册自定义聚合函数
+UdfTest_ScalaarFunction：注册自定义标量函数
+UdfTest_TableAggregareFunction：注册滚动自定义聚合函数
+```
+
+
+# chapter12
+```
+LoginFailDetectExample：使用where、next指定三次登陆失败CEP例子
+LoginFailDetectProExample：使用times(3).consecutive()指定三次登陆失败的CEP例子
+NFAExample：利用状态机的找到三次登陆失败的例子
+OrderTimeoutDetectExample：利用CEP检测订单是否超时
+```
+
